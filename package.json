@@ -2,10 +2,11 @@
   "name": "bilateral-dashboard-ui",
   "version": "1.0.0",
   "description": "Dashboard of BILATERAL",
-  "main": "dist/index.html",
+  "main": "index.html",
   "scripts": {
-    "tailwind:build": "tailwindcss build styles/tailwind.scss -o dist/css/tailwind.css",
-    "styles:build": "node-sass --watch styles/styles.scss -o dist/css"
+    "tailwind:build": "postcss styles/tailwind.scss -o dist/css/tailwind.css",
+    "styles:build": "node-sass --watch styles/styles.scss -o dist/css",
+    "theme:build": "npm run tailwind:build && node-sass styles/styles.scss -o dist/css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,10 @@
   },
   "homepage": "https://github.com/zizc0de/bilateral-dashboard-ui#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^9.8.6",
     "node-sass": "^5.0.0",
+    "postcss-cli": "^8.2.0",
     "tailwindcss": "^1.9.6"
   }
 }
