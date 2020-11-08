@@ -1,0 +1,24 @@
+{
+  "name": "bilateral-dashboard-ui",
+  "version": "1.0.0",
+  "description": "Dashboard of BILATERAL",
+  "main": "dist/index.html",
+  "scripts": {
+    "tailwind:build": "tailwindcss build styles/tailwind.scss -o dist/css/tailwind.css",
+    "styles:build": "node-sass --watch styles/styles.scss -o dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zizc0de/bilateral-dashboard-ui.git"
+  },
+  "author": "M. Abdul Aziz <me@zizcode.web.id>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zizc0de/bilateral-dashboard-ui/issues"
+  },
+  "homepage": "https://github.com/zizc0de/bilateral-dashboard-ui#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "tailwindcss": "^1.9.6"
+  }
+}
