@@ -87,20 +87,25 @@
   .main-sidebar-menu__item:not(:first-child) {
     margin-top: 30px; }
   .main-sidebar-menu__item ul > li {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    opacity: 0.8;
     margin-left: -16px;
-    margin-right: -16px;
-    padding: 16px; }
-    .main-sidebar-menu__item ul > li > img {
-      margin-right: 7px; }
-    .main-sidebar-menu__item ul > li.active {
+    margin-right: -16px; }
+    .main-sidebar-menu__item ul > li > a {
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      opacity: 0.8;
+      padding: 16px;
+      text-decoration: none; }
+      .main-sidebar-menu__item ul > li > a > img {
+        margin-right: 8px; }
+    .main-sidebar-menu__item ul > li:hover, .main-sidebar-menu__item ul > li.active {
       background-color: rgba(0, 0, 0, 0.8);
-      border-left: 3px solid #F88A28;
-      font-family: "Proxima-Bold";
       opacity: 1; }
+    .main-sidebar-menu__item ul > li.active {
+      border-left: 3px solid #F88A28; }
+      .main-sidebar-menu__item ul > li.active > a {
+        font-family: "Proxima-Bold"; }
 
 html,
 body {
