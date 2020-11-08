@@ -118,5 +118,9 @@ body {
 
 .container--with-background {
   background-image: url("../../assets/images/bg.png");
+  background-size: cover;
   min-height: 392px;
   padding: 35px; }
+
+.container {
+  max-width: 100%; }
