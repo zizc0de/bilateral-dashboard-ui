@@ -94,14 +94,15 @@
       display: flex;
       align-items: center;
       font-size: 14px;
-      opacity: 0.8;
+      opacity: 0.6;
       padding: 16px;
       text-decoration: none; }
       .main-sidebar-menu__item ul > li > a > img {
         margin-right: 8px; }
     .main-sidebar-menu__item ul > li:hover, .main-sidebar-menu__item ul > li.active {
-      background-color: rgba(0, 0, 0, 0.8);
-      opacity: 1; }
+      background-color: rgba(0, 0, 0, 0.8); }
+      .main-sidebar-menu__item ul > li:hover > a, .main-sidebar-menu__item ul > li.active > a {
+        opacity: 1; }
     .main-sidebar-menu__item ul > li.active {
       border-left: 3px solid #F88A28; }
       .main-sidebar-menu__item ul > li.active > a {
