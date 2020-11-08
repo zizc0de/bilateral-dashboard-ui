@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+// Abstract
+@import './abstracts/_abstract-dir';
+
+// Components
+@import './components/_components-dir';
+
+// Layout
+@import './layouts/_layouts-dir';
+
+html,
+body {
+  color: #333333;
+  font-family: 'Proxima-Regular';
+}
+
+.main-body {
+  padding-top: 56px;
+}
+
+.container--with-background {
+  background-image: url('../../assets/images/bg.png');
+  min-height: 392px;
+  padding: 35px;
+}

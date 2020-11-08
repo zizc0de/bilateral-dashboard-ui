@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1050px" height="392px" viewBox="0 0 1050 392" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>A8627507-652D-4601-9402-BB650C1D9BEE</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1050" height="392"></rect>
+        <linearGradient x1="63.1547663%" y1="25.235427%" x2="9.34023434%" y2="54.1408547%" id="linearGradient-3">
+            <stop stop-color="#07257C" offset="0%"></stop>
+            <stop stop-color="#1C3682" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="59.4518053%" y1="25.2459034%" x2="28.1705299%" y2="97.9324392%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.1" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Portofolio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.1-Proyek-Bilateral" transform="translate(-230.000000, -52.000000)">
+            <g id="bg" transform="translate(230.000000, 52.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle" fill="#1C3682" xlink:href="#path-1"></use>
+                <path d="M588,-11 C716.214753,-1.13862885 815.614753,37.510596 886.2,104.947674 C956.785247,172.384753 999.385247,269.402195 1014,396 L588,396 L588,-11 Z" id="Rectangle" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                <path d="M578.5,-1.5 C706.714753,8.36137115 806.114753,47.010596 876.7,114.447674 C947.285247,181.884753 989.885247,278.902195 1004.5,405.5 L578.5,405.5 L578.5,-1.5 Z" id="Rectangle-Copy" fill="url(#linearGradient-4)" mask="url(#mask-2)" transform="translate(791.500000, 202.000000) rotate(90.000000) translate(-791.500000, -202.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

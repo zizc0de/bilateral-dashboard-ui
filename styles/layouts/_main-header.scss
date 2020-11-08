@@ -1,0 +1,27 @@
+.main-header {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 0 0 #DDDDDD;
+  display: flex;
+  min-height: 52px;
+  padding: 16px 35px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  max-width: 80%;
+  margin: 0 0 0 auto;
+}
+
+.main-header .main-header-menu {
+  display: flex;
+  flex: 1;
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
+}

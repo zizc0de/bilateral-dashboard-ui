@@ -1,0 +1,11 @@
+.card {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.18);
+  padding: 20px;
+
+  &-title {
+    font-size: 16px;
+    font-family: 'Proxima-Bold';
+  }
+}

@@ -1,0 +1,20 @@
+.btn {
+  border-radius: 4px;
+  padding: 8px 30px;
+  font-size: 14px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-secondary {
+  background-color: #F88A28;
+  color: #FFFFFF;
+
+  &:hover,
+  &:focus {
+    background-color: #eb8124;
+  }
+}
