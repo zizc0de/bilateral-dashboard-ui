@@ -366,7 +366,8 @@ button {
  */
 
 img,
-svg {
+svg,
+canvas {
   display: block;
   vertical-align: middle;
 }

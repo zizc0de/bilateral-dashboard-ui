@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/tailwind.css">
     <link rel="stylesheet" href="../dist/css/styles.css">
+
+    <!-- Start ChartJS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <!-- End ChartJS Library -->
+
     <title>BILATERAL</title>
 </head>
 
 <body>
     <div class="main-layout">
+        <!-- Start Main Sidebar -->
         <div class="main-sidebar bg-dark">
             <div class="main-sidebar-head">
                 <div class="main-sidebar__icon"></div>
@@ -79,7 +86,10 @@
                 </div>
             </div>
         </div>
+        <!-- End Main Sidebar -->
+        <!-- Start Main Content -->
         <div class="main-content">
+            <!-- Start Navbar -->
             <div class="main-header">
                 <div class="main-header-title font-proxima-bold text-default">Portofolio Proyek Bilateral</div>
                 <div class="main-header-menu main-header-menu--right">
@@ -91,6 +101,8 @@
                     </div>
                 </div>
             </div>
+            <!-- End Navbar -->
+            <!-- Start Content Page -->
             <div class="main-body">
                 <div class="container container--with-background">
                     <p class="text-white font-proxima-semi-bold">Total Proyek</p>
@@ -192,16 +204,26 @@
                         <div class="grid grid-cols-2 gap-6">
                             <div class="card">
                                 <div class="card-title">Ringkasan Jumlah Proyek</div>
+                                <div class="card-body">
+                                    <canvas id="chart-project-count" width="100%" height="80px"></canvas>
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-title">Ringkasan Nilai Proyek (USD)</div>
+                                <div class="card-body">
+                                    <canvas id="chart-project-value" width="100%" height="80px"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End Content Page -->
         </div>
+        <!-- End Main Content -->
     </div>
+
+    <script src="../dist/js/page-index.js"></script>
 </body>
 
 </html>
