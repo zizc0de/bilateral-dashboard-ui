@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Regular Datatables CSS-->
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!--Responsive Extension Datatables CSS-->
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../dist/css/styles.css">
+    <link rel="stylesheet" href="../dist/css/tailwind.css">
+
+    <title>BILATERAL</title>
+</head>
+
+<body>
+    <div class="main-layout">
+        <!-- Start Main Sidebar -->
+        <div class="main-sidebar bg-dark">
+            <div class="main-sidebar-head">
+                <div class="main-sidebar__icon"></div>
+                <div class="main-sidebar__title font-proxima-bold text-lg text-white uppercase">
+                    Bilateral
+                </div>
+            </div>
+            <div class="main-sidebar-menu">
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Dashboard</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-office.svg" />
+                                <span>Data Makro APBN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-graph.svg" />
+                                <span>Data Outstanding Utang</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="index.html">
+                                <img src="../assets/icons/ic-handshake.svg" />
+                                <span>Portofolio Proyek Bilateral</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-segrakan.svg" />
+                                <span>Segrakan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Master Data</p>
+                    <ul>
+                        <li>
+                            <a href="#">Program</a>
+                        </li>
+                        <li>
+                            <a href="#">Bidang</a>
+                        </li>
+                        <li>
+                            <a href="#">Kementrian / Lembaga</a>
+                        </li>
+                        <li>
+                            <a href="#">Cluster</a>
+                        </li>
+                        <li>
+                            <a href="#">Lender</a>
+                        </li>
+                        <li>
+                            <a href="#">Status Proyek</a>
+                        </li>
+                        <li>
+                            <a href="#">Lokasi</a>
+                        </li>
+                        <li>
+                            <a href="#">Kurs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Sidebar -->
+        <!-- Start Main Content -->
+        <div class="main-content">
+            <!-- Start Navbar -->
+            <div class="main-header">
+                <div class="main-header-title font-proxima-bold text-default">Portofolio Proyek Bilateral</div>
+                <div class="main-header-menu main-header-menu--right">
+                    <div class="main-header-menu__item">
+                        Search
+                    </div>
+                    <div class="main-header-menu__item">
+                        Profile
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+            <!-- Start Content Page -->
+            <div class="main-body">
+                <section class="section--with-padding">
+                    <div class="card">
+                        <div class="card-header bg-light-gray">
+                            <div class="card-header__title">Detail Data</div>
+                        </div>
+                        <div class="card-body">
+                            <table id="dataTable" class="table-default">
+                                <thead>
+                                    <tr>
+                                        <th>Kode</th>
+                                        <th>Nama Proyek</th>
+                                        <th>Status</th>
+                                        <th>Bidang</th>
+                                        <th>KL</th>
+                                        <th>Program</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End Content Page -->
+        </div>
+        <!-- End Main Content -->
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!--Datatables -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    <script src="../dist/js/page-table.js"></script>
+</body>
+
+</html>

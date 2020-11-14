@@ -30,12 +30,51 @@
 .card {
   border-radius: 4px;
   background-color: #FFFFFF;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18);
-  padding: 20px; }
-  .card-title {
-    font-size: 16px;
-    font-family: 'Proxima-Bold';
-    margin-bottom: 16px; }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18); }
+  .card-header {
+    padding: 20px; }
+    .card-header__title {
+      font-size: 16px;
+      font-family: 'Proxima-Bold'; }
+  .card-body {
+    padding: 16px; }
+
+.table-default {
+  border-bottom: none !important; }
+  .table-default > thead > tr {
+    background-color: #f5f8fa;
+    color: #666666; }
+    .table-default > thead > tr > th {
+      font-size: 14px;
+      font-family: "Proxima-SemiBold";
+      text-transform: uppercase;
+      border-bottom: none !important; }
+  .table-default > tbody > tr > td {
+    border-bottom: 1px solid #ebeced;
+    color: #333333;
+    font-size: 14px; }
+
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  font-size: 12px; }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  font-size: 12px !important;
+  padding: 3px 10px !important; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #f88a28 !important;
+    border: 1px solid #f88a28 !important;
+    color: #ffffff !important; }
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+      color: #ffffff !important; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f88a28 !important;
+    border: 1px solid #f88a28 !important;
+    color: #ffffff !important; }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.next:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover {
+    background-color: #ffffff !important;
+    border: none !important;
+    color: #333333 !important; }
 
 .main-content {
   float: right;
@@ -46,12 +85,13 @@
   box-shadow: 0 1px 0 0 #DDDDDD;
   display: flex;
   min-height: 52px;
-  padding: 16px 35px;
+  padding: 16px 37px;
   position: fixed;
   right: 0;
   left: 0;
   max-width: 80%;
-  margin: 0 0 0 auto; }
+  margin: 0 0 0 auto;
+  z-index: 99; }
 
 .main-header .main-header-menu {
   display: flex;
@@ -109,8 +149,12 @@
       .main-sidebar-menu__item ul > li.active > a {
         font-family: "Proxima-Bold"; }
 
+.section--with-padding {
+  padding: 37px; }
+
 html,
 body {
+  background-color: #EBECED;
   color: #333333;
   font-family: 'Proxima-Regular'; }
 
@@ -121,7 +165,7 @@ body {
   background-image: url("../../assets/images/bg.png");
   background-size: cover;
   min-height: 392px;
-  padding: 35px; }
+  padding: 60px 37px; }
 
 .container {
   max-width: 100%; }

@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     backgroundColor: {
       'dark': '#1D1C2F',
-      'secondary': '#F88A28'
+      'secondary': '#F88A28',
+      'soft-gray': '#EBECED',
+      'light-gray': '#F5F8FA',
     },
     colors: {
       'default': '#333333',
@@ -15,7 +17,7 @@ module.exports = {
       'white': '#FFFFFF'
     },
     container: {
-      padding: '35px'
+      padding: '37px'
     },
     fontFamily: {
       'proxima': 'Proxima-Regular',

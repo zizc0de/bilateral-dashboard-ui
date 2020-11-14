@@ -326,6 +326,10 @@ button {
   cursor: pointer;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 /**
  * Reset links to optimize for opt-in styling instead of
  * opt-out.
@@ -386,8 +390,8 @@ img {
 
 .container {
   width: 100%;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 37px;
+  padding-left: 37px;
 }
 
 @media (min-width: 640px) {
@@ -420,8 +424,18 @@ img {
   background-color: rgba(29, 28, 47, var(--bg-opacity));
 }
 
+.bg-light-gray {
+  --bg-opacity: 1;
+  background-color: #F5F8FA;
+  background-color: rgba(245, 248, 250, var(--bg-opacity));
+}
+
 .flex {
   display: flex;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
@@ -460,17 +474,13 @@ img {
   font-size: 3rem;
 }
 
-.-my-40 {
-  margin-top: -10rem;
-  margin-bottom: -10rem;
+.-my-32 {
+  margin-top: -8rem;
+  margin-bottom: -8rem;
 }
 
 .mb-1 {
   margin-bottom: 0.25rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
 }
 
 .mt-8 {
@@ -479,6 +489,10 @@ img {
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .text-default {
@@ -501,6 +515,10 @@ img {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .gap-6 {
