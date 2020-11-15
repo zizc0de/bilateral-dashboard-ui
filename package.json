@@ -20,6 +20,7 @@
   "homepage": "https://github.com/zizc0de/bilateral-dashboard-ui#readme",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^9.8.6",
     "node-sass": "^5.0.0",
     "postcss-cli": "^8.2.0",
