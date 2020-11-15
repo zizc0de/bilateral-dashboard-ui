@@ -1,0 +1,20 @@
+.tab-rounded {
+  background-color: #FFFFFF;
+  border: 1px solid #E0E7EA;
+  border-radius: 15px;
+  display: inline-flex;
+  padding: 2px;
+
+  &__item {
+    color: #1C3682;
+    font-family: "Proxima-SemiBold";
+    font-size: 12px;
+    padding: 5px 25px;
+
+    &.active {
+      background-color: #1C3682;
+      color: #FFFFFF;
+      border-radius: 15px;
+    }
+  }
+}

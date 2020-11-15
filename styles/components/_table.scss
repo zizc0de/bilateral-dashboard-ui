@@ -1,0 +1,72 @@
+.table-default {
+  border-bottom: none !important;
+  margin-bottom: 15px !important;
+
+  > thead > tr {
+    background-color: #f5f8fa;
+    color: #666666;
+
+    > th {
+      font-size: 14px;
+      font-family: "Proxima-SemiBold";
+      text-transform: uppercase;
+      border-bottom: none !important;
+    }
+  }
+
+  > tbody > tr > td {
+    border-bottom: 1px solid #ebeced;
+    color: #333333;
+    font-size: 14px;
+  }
+}
+
+.dataTables {
+  $this: &;
+
+  &_wrapper {
+    #{$this}_info,
+    #{$this}_paginate {
+      font-size: 12px;
+    }
+  
+    #{$this}_paginate {
+      border-top: 1px solid #EBECED;
+      border-bottom: 1px solid #EBECED;
+      border-right: 1px solid #EBECED;
+      padding-top: 0;
+
+      .paginate_button {
+        border-radius: 0;
+        border-left: 1px solid #EBECED !important;
+        font-size: 12px !important;
+        font-family: "Proxima-SemiBold" !important;
+        margin: 0;
+        padding: 3px 10px !important;
+
+        &.current {
+          background: #f88a28 !important;
+          border-color: #f88a28 !important;
+          color: #ffffff !important;
+
+          &:hover {
+            color: #ffffff !important;
+          }
+        }
+
+        &:hover {
+          background: #f88a28 !important;
+          border-color: #f88a28 !important;
+          color: #ffffff !important;
+        }
+
+        &.next:hover,
+        &.previous:hover {
+          background-color: #ffffff !important;
+          border: none !important;
+          color: #333333 !important;
+        }
+      }
+    }
+  }
+}
