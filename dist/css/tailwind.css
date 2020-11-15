@@ -534,6 +534,16 @@ img {
   background-color: rgba(245, 248, 250, var(--bg-opacity));
 }
 
+.border-soft-gray {
+  --border-opacity: 1;
+  border-color: #EBECED;
+  border-color: rgba(235, 236, 237, var(--border-opacity));
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .flex {
   display: flex;
 }
@@ -591,6 +601,16 @@ img {
   margin-bottom: 1rem;
 }
 
+.-mx-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.-mx-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
 .-my-32 {
   margin-top: -8rem;
   margin-bottom: -8rem;
@@ -616,12 +636,43 @@ img {
   opacity: 0.75;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .pr-2 {
@@ -652,6 +703,12 @@ img {
   --text-opacity: 1;
   color: #FFFFFF;
   color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.text-light-gray {
+  --text-opacity: 1;
+  color: #666666;
+  color: rgba(102, 102, 102, var(--text-opacity));
 }
 
 .text-soft-gray {

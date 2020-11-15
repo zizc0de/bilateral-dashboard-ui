@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../dist/css/styles.css">
+    <link rel="stylesheet" href="../dist/css/tailwind.css">
+
+    <!-- Google Maps -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiCXelWIfNwqXZAHCoJeianBuSQUn4M7w&callback=initMap"
+        defer></script>
+
+    <script src="../dist/js/page-maps.js"></script>
+
+    <title>BILATERAL</title>
+</head>
+
+<body>
+    <div class="main-layout">
+        <!-- Start Main Sidebar -->
+        <div class="main-sidebar bg-dark">
+            <div class="main-sidebar-head">
+                <div class="main-sidebar__icon"></div>
+                <div class="main-sidebar__title font-proxima-bold text-lg text-white uppercase">
+                    Bilateral
+                </div>
+            </div>
+            <div class="main-sidebar-menu">
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Dashboard</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-office.svg" />
+                                <span>Data Makro APBN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-graph.svg" />
+                                <span>Data Outstanding Utang</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <img src="../assets/icons/ic-handshake.svg" />
+                                <span>Portofolio Proyek Bilateral</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-segrakan.svg" />
+                                <span>Segrakan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Master Data</p>
+                    <ul>
+                        <li>
+                            <a href="#">Program</a>
+                        </li>
+                        <li>
+                            <a href="#">Bidang</a>
+                        </li>
+                        <li>
+                            <a href="#">Kementrian / Lembaga</a>
+                        </li>
+                        <li>
+                            <a href="#">Cluster</a>
+                        </li>
+                        <li>
+                            <a href="#">Lender</a>
+                        </li>
+                        <li>
+                            <a href="#">Status Proyek</a>
+                        </li>
+                        <li>
+                            <a href="#">Lokasi</a>
+                        </li>
+                        <li>
+                            <a href="#">Kurs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Sidebar -->
+        <!-- Start Main Content -->
+        <div class="main-content">
+            <!-- Start Navbar -->
+            <div class="main-header">
+                <div class="main-header-title font-proxima-bold text-default">Portofolio Proyek Bilateral</div>
+                <div class="main-header-menu main-header-menu--right">
+                    <div class="main-header-menu__item">
+                        Search
+                    </div>
+                    <div class="main-header-menu__item">
+                        Profile
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+            <!-- Start Content Page -->
+            <div class="main-body">
+                <section class="section--with-padding">
+                    <div class="card">
+                        <div class="card-header bg-light-gray">
+                            <div class="card-header__title">Detail Data</div>
+                            <div class="flex my-4">
+                                <div class="flex-1">
+                                    <div class="tab-rounded">
+                                        <a href="table.html" class="tab-rounded__item">Tabel</a>
+                                        <a href="table-stats.html" class="tab-rounded__item">Grafik</a>
+                                        <a href="table-maps.html" class="tab-rounded__item active">Peta</a>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="flex pr-2">
+                                        <div class="form-input-group">
+                                            <input type="text" class="form-input" placeholder="Cari...">
+                                            <div class="form-input-group-append">
+                                                <div class="input-group-text">
+                                                    <i class="fas fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-sort-amount-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-upload"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-secondary font-proxima-bold">
+                                            Tambah Proyek
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-end">
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Status</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option selected>Implementasi</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">KL</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1">
+                                    <p class="form-label">Lender</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div style="height: 470px;" class="flex overflow-hidden">
+                                <div id="map" class="flex-1"></div>
+                                <div class="p-5 overflow-y-auto">
+                                    <p class="text-lg font-proxima-semi-bold">Keterangan</p>
+                                    <div>
+                                        <div class="flex py-3 px-4 text-sm border-b border-soft-gray -mx-4">
+                                            <div class="flex-1 pr-3">Jakarta</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jawa Barat</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jawa Tengah</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">DIY Yogyakarta</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jakarta</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jawa Barat</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jawa Tengah</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">DIY Yogyakarta</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jakarta</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jawa Barat</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">Jawa Tengah</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                        <div class="flex py-3 px-5 text-sm border-b border-soft-gray -mx-5">
+                                            <div class="flex-1 pr-3">DIY Yogyakarta</div>
+                                            <div class="text-light-gray">USD 8,8742 • 6 Proyek</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End Content Page -->
+        </div>
+        <!-- End Main Content -->
+    </div>
+
+</body>
+
+</html>

@@ -11,10 +11,14 @@ module.exports = {
       "soft-gray": "#EBECED",
       "light-gray": "#F5F8FA",
     },
+    borderColor: {
+      "soft-gray": "#EBECED",
+    },
     colors: {
       default: "#333333",
       gray: "#777777",
       white: "#FFFFFF",
+      "light-gray": "#666666",
       "soft-gray": "#A9ACBC",
     },
     container: {
