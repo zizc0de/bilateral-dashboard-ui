@@ -128,6 +128,7 @@
     color: #1C3682;
     font-family: "Proxima-SemiBold";
     font-size: 12px;
+    letter-spacing: 1px;
     padding: 5px 25px; }
     .tab-rounded__item.active {
       background-color: #1C3682;

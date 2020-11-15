@@ -632,6 +632,10 @@ img {
   padding-right: 0.75rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-default {
   --text-opacity: 1;
   color: #333333;

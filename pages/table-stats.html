@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Start ChartJS Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+        integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <!-- End ChartJS Library -->
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../dist/css/styles.css">
+    <link rel="stylesheet" href="../dist/css/tailwind.css">
+
+    <title>BILATERAL</title>
+</head>
+
+<body>
+    <div class="main-layout">
+        <!-- Start Main Sidebar -->
+        <div class="main-sidebar bg-dark">
+            <div class="main-sidebar-head">
+                <div class="main-sidebar__icon"></div>
+                <div class="main-sidebar__title font-proxima-bold text-lg text-white uppercase">
+                    Bilateral
+                </div>
+            </div>
+            <div class="main-sidebar-menu">
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Dashboard</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-office.svg" />
+                                <span>Data Makro APBN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-graph.svg" />
+                                <span>Data Outstanding Utang</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="index.html">
+                                <img src="../assets/icons/ic-handshake.svg" />
+                                <span>Portofolio Proyek Bilateral</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/icons/ic-segrakan.svg" />
+                                <span>Segrakan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Master Data</p>
+                    <ul>
+                        <li>
+                            <a href="#">Program</a>
+                        </li>
+                        <li>
+                            <a href="#">Bidang</a>
+                        </li>
+                        <li>
+                            <a href="#">Kementrian / Lembaga</a>
+                        </li>
+                        <li>
+                            <a href="#">Cluster</a>
+                        </li>
+                        <li>
+                            <a href="#">Lender</a>
+                        </li>
+                        <li>
+                            <a href="#">Status Proyek</a>
+                        </li>
+                        <li>
+                            <a href="#">Lokasi</a>
+                        </li>
+                        <li>
+                            <a href="#">Kurs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Sidebar -->
+        <!-- Start Main Content -->
+        <div class="main-content">
+            <!-- Start Navbar -->
+            <div class="main-header">
+                <div class="main-header-title font-proxima-bold text-default">Portofolio Proyek Bilateral</div>
+                <div class="main-header-menu main-header-menu--right">
+                    <div class="main-header-menu__item">
+                        Search
+                    </div>
+                    <div class="main-header-menu__item">
+                        Profile
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+            <!-- Start Content Page -->
+            <div class="main-body">
+                <section class="section--with-padding">
+                    <div class="card">
+                        <div class="card-header bg-light-gray">
+                            <div class="card-header__title">Detail Data</div>
+                            <div class="flex my-4">
+                                <div class="flex-1">
+                                    <div class="tab-rounded">
+                                      <a href="table.html" class="tab-rounded__item">Tabel</a>
+                                      <a href="table-stats.html" class="tab-rounded__item active">Grafik</a>
+                                      <a href="#" class="tab-rounded__item">Peta</a>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="flex pr-2">
+                                        <div class="form-input-group">
+                                            <input type="text" class="form-input" placeholder="Cari...">
+                                            <div class="form-input-group-append">
+                                                <div class="input-group-text">
+                                                    <i class="fas fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-sort-amount-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-upload"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-secondary font-proxima-bold">
+                                            Tambah Proyek
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-end">
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Status</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option selected>Implementasi</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Sumbu Y</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Sumbu X</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">KL</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Lender</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          <p class="font-proxima-bold">Jumlah Proyek</p>
+                          <canvas id="table-stats" width="100%" height="40px"></canvas>
+                          <div class="mt-4 text-center">
+                            <p class="font-proxima-bold">Lender</p>
+                          </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End Content Page -->
+        </div>
+        <!-- End Main Content -->
+    </div>
+
+    <script src="../dist/js/page-stats.js"></script>
+</body>
+
+</html>
