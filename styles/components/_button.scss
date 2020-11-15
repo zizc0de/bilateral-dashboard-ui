@@ -1,4 +1,6 @@
 .btn {
+  display: flex;
+  align-items: center;
   border-radius: 4px;
   padding: 8px 30px;
   font-size: 14px;
@@ -6,6 +8,10 @@
   &:hover,
   &:focus {
     outline: none;
+  }
+
+  &-sm {
+    padding: 12px;
   }
 }
 
@@ -17,4 +23,14 @@
   &:focus {
     background-color: #eb8124;
   }
+}
+
+.btn-default {
+  background-color: #FFFFFF;
+  border: 1px solid #E0E7EA;
+}
+
+.btn-primary {
+  background-color: #1C3682;
+  color: #FFFFFF !important;
 }

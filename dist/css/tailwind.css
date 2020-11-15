@@ -99,7 +99,9 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-button {
+button,
+input,
+select {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -111,7 +113,8 @@ button {
  * 1. Show the overflow in Edge.
  */
 
-button { /* 1 */
+button,
+input { /* 1 */
   overflow: visible;
 }
 
@@ -120,7 +123,8 @@ button { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button { /* 1 */
+button,
+select { /* 1 */
   text-transform: none;
 }
 
@@ -215,6 +219,10 @@ button:-moz-focusring,
 /**
  * Add the correct display in IE 10.
  */
+
+[hidden] {
+  display: none;
+}
 
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
@@ -322,6 +330,18 @@ img {
   border-style: solid;
 }
 
+input::-moz-placeholder {
+  color: #a0aec0;
+}
+
+input:-ms-input-placeholder {
+  color: #a0aec0;
+}
+
+input::placeholder {
+  color: #a0aec0;
+}
+
 button {
   cursor: pointer;
 }
@@ -348,7 +368,9 @@ a {
  * normalize.css.
  */
 
-button {
+button,
+input,
+select {
   padding: 0;
   line-height: inherit;
   color: inherit;
@@ -418,6 +440,88 @@ img {
   }
 }
 
+.form-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #fff;
+  border-color: #e2e8f0;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.form-input::-moz-placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
+
+.form-input:-ms-input-placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
+
+.form-input::placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23a0aec0'%3e%3cpath d='M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z'/%3e%3c/svg%3e");
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-color: #e2e8f0;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-position: right 0.5rem center;
+  background-size: 1.5em 1.5em;
+}
+
+.form-select::-ms-expand {
+  color: #a0aec0;
+  border: none;
+}
+
+@media not print {
+  .form-select::-ms-expand {
+    display: none;
+  }
+}
+
+@media print and (-ms-high-contrast: active), print and (-ms-high-contrast: none) {
+  .form-select {
+    padding-right: 0.75rem;
+  }
+}
+
+.form-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #63b3ed;
+}
+
 .bg-dark {
   --bg-opacity: 1;
   background-color: #1D1C2F;
@@ -440,6 +544,14 @@ img {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .items-center {
@@ -474,13 +586,26 @@ img {
   font-size: 3rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .-my-32 {
   margin-top: -8rem;
   margin-bottom: -8rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-8 {
@@ -491,8 +616,20 @@ img {
   opacity: 0.75;
 }
 
-.p-0 {
-  padding: 0;
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-default {
@@ -513,12 +650,22 @@ img {
   color: rgba(255, 255, 255, var(--text-opacity));
 }
 
+.text-soft-gray {
+  --text-opacity: 1;
+  color: #A9ACBC;
+  color: rgba(169, 172, 188, var(--text-opacity));
+}
+
 .uppercase {
   text-transform: uppercase;
 }
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .gap-6 {

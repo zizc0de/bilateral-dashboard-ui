@@ -10,6 +10,9 @@
     <!--Responsive Extension Datatables CSS-->
     <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+
     <link rel="stylesheet" href="../dist/css/styles.css">
     <link rel="stylesheet" href="../dist/css/tailwind.css">
 
@@ -109,9 +112,147 @@
                     <div class="card">
                         <div class="card-header bg-light-gray">
                             <div class="card-header__title">Detail Data</div>
+                            <div class="flex my-4">
+                                <div class="flex-1">
+                                    <div class="tab-rounded">
+                                        <div class="tab-rounded__item active">Tabel</div>
+                                        <div class="tab-rounded__item">Grafik</div>
+                                        <div class="tab-rounded__item">Peta</div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="flex pr-2">
+                                        <div class="form-input-group">
+                                            <input type="text" class="form-input" placeholder="Cari...">
+                                            <div class="form-input-group-append">
+                                                <div class="input-group-text">
+                                                    <i class="fas fa-search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-sort-amount-down"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-upload"></i>
+                                        </button>
+                                    </div>
+                                    <div class="flex pr-3">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-secondary font-proxima-bold">
+                                            Tambah Proyek
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-end">
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Status</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option selected>Implementasi</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">KL</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Lender</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Bidang</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Program</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-1 pr-3">
+                                    <p class="form-label">Lokasi</p>
+                                    <select class="form-select mt-1 w-full">
+                                        <option>Pilih</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                        <option>Option 4</option>
+                                    </select>
+                                </div>
+                                <div class="flex">
+                                    <button type="button" id="btn-filter" class="btn btn-sm btn-default p-3 text-soft-gray">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="more-filter" class="hidden">
+                                <div class="flex mt-4">
+                                    <div class="form-group flex-1 pr-3">
+                                        <p class="form-label">Nilai Ekivalen USD</p>
+                                        <select class="form-select mt-1 w-full">
+                                            <option>Pilih</option>
+                                            <option selected>Atur</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group flex-1 pr-3">
+                                        <p class="form-label">Cluster</p>
+                                        <select class="form-select mt-1 w-full">
+                                            <option>Pilih</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group flex-1 pr-3">
+                                        <p class="form-label">Tahun Implementasi</p>
+                                        <select class="form-select mt-1 w-full">
+                                            <option>Pilih</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                            <option>Option 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
-                            <table id="dataTable" class="table-default">
+                            <table id="dataTable" class="table-default mt-4">
                                 <thead>
                                     <tr>
                                         <th>Kode</th>
@@ -123,6 +264,70 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
+                                    <tr>
+                                        <td>PR098</td>
+                                        <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
+                                        <td>Implementasi</td>
+                                        <td>Infrastruktur</td>
+                                        <td>Kementerian Pekerjaan Umum dan Perumahan Rakyat</td>
+                                        <td>Program Pembangunan Jalan Tol </td>
+                                    </tr>
                                     <tr>
                                         <td>PR098</td>
                                         <td>Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II</td>
