@@ -14,6 +14,39 @@
   font-family: 'Proxima-Bold';
   src: url("../../assets/fonts/ProximaNova/ProximaNova-Bold.otf") format("opentype"); }
 
+.bilateral-icon.office:before {
+  content: url("../../assets/icons/ic-office.svg"); }
+
+.bilateral-icon.graph:before {
+  content: url("../../assets/icons/ic-graph.svg"); }
+
+.bilateral-icon.handshake:before {
+  content: url("../../assets/icons/ic-handshake.svg"); }
+
+.bilateral-icon.handshake.active:before {
+  content: url("../../assets/icons/ic-handshake-active.svg"); }
+
+.bilateral-icon.segrakan:before {
+  content: url("../../assets/icons/ic-segrakan.svg"); }
+
+.bilateral-icon.import:before {
+  content: url("../../assets/icons/ic-import.svg"); }
+
+.bilateral-icon.export:before {
+  content: url("../../assets/icons/ic-export.svg"); }
+
+.bilateral-icon.search:before {
+  content: url("../../assets/icons/ic-search.svg"); }
+
+.bilateral-icon.search-gray:before {
+  content: url("../../assets/icons/ic-search-gray.svg"); }
+
+.bilateral-icon.sort:before {
+  content: url("../../assets/icons/ic-sort.svg"); }
+
+.bilateral-icon.eye:before {
+  content: url("../../assets/icons/ic-eye.svg"); }
+
 .btn {
   display: flex;
   align-items: center;
@@ -142,7 +175,8 @@
     background-color: #f5f8fa;
     color: #666666; }
     .table-default > thead > tr > th {
-      font-size: 14px;
+      font-size: 12px;
+      letter-spacing: 1px;
       font-family: "Proxima-SemiBold";
       text-transform: uppercase;
       border-bottom: none !important; }
@@ -244,7 +278,7 @@
       opacity: 0.6;
       padding: 16px;
       text-decoration: none; }
-      .main-sidebar-menu__item ul > li > a > img {
+      .main-sidebar-menu__item ul > li > a > i {
         margin-right: 8px; }
     .main-sidebar-menu__item ul > li:hover, .main-sidebar-menu__item ul > li.active {
       background-color: rgba(0, 0, 0, 0.8); }
