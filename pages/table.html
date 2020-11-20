@@ -13,7 +13,7 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
 
-    <link rel="stylesheet" href="../dist/css/styles.css">
+    <link rel="stylesheet" href="../dist/css/styles.min.css">
     <link rel="stylesheet" href="../dist/css/tailwind.css">
 
     <title>BILATERAL</title>
@@ -132,14 +132,209 @@
                                         </div>
                                     </div>
                                     <div class="flex pr-3">
-                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
-                                            <i class="bilateral-icon sort"></i>
-                                        </button>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-default p-2 text-soft-gray dropdown-button">
+                                                <i class="bilateral-icon sort"></i>
+                                            </button>
+                                            <div class="dropdown-content">
+                                                <p class="text-xs uppercase tracking-wider mb-3">Urutkan</p>
+                                                <div class="mb-2 accordion open">
+                                                    <p class="text-xs font-proxima-semi-bold accordion-button">Nama
+                                                        Proyek</p>
+                                                    <div class="accordion-content">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>A-Z</span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>Z-A</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2 accordion">
+                                                    <p class="text-xs font-proxima-semi-bold accordion-button">Nilai
+                                                        Pinjaman</p>
+                                                    <div class="accordion-content">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>A-Z</span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>Z-A</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-2 accordion">
+                                                    <p class="text-xs font-proxima-semi-bold accordion-button">Lender
+                                                    </p>
+                                                    <div class="accordion-content">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>A-Z</span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>Z-A</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion">
+                                                    <p class="text-xs font-proxima-semi-bold accordion-button">KL</p>
+                                                    <div class="accordion-content">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>A-Z</span>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="form-group-checkbox">
+                                                                    <input type="checkbox" class="form-checkbox">
+                                                                    <span>Z-A</span>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="flex pr-3">
-                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
-                                            <i class="bilateral-icon eye"></i>
-                                        </button>
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-default p-2 text-soft-gray dropdown-button">
+                                                <i class="bilateral-icon eye"></i>
+                                            </button>
+                                            <div class="dropdown-content">
+                                                <p class="text-xs uppercase tracking-wider mb-2">Lihat Kolom</p>
+                                                <ul>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Kode</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Nama Proyek</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Status</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Bidang</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>KL</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Program</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Cluster</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Lender</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Nilai valas</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Nilai ekivalen USD</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Nilai Rp</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Lokasi</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Ruang Lingkup</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Tanggal A</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Tanggal Efektif</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Tanggal Closing</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-group-checkbox">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Keterangan</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="flex pr-3">
                                         <button type="button" class="btn btn-default p-2 text-soft-gray">
@@ -214,7 +409,8 @@
                                     </select>
                                 </div>
                                 <div class="flex">
-                                    <button type="button" id="btn-filter" class="btn btn-sm btn-default p-3 text-soft-gray">
+                                    <button type="button" id="btn-filter"
+                                        class="btn btn-sm btn-default p-3 text-soft-gray">
                                         <i class="fas fa-chevron-down"></i>
                                     </button>
                                 </div>
@@ -411,6 +607,7 @@
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
 
     <script src="../dist/js/page-table.js"></script>
+    <script src="../dist/js/components.js"></script>
 </body>
 
 </html>

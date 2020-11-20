@@ -1,0 +1,24 @@
+.accordion {
+  &.open {
+    > .accordion-content {
+      display: block;
+    }
+    > .accordion-button {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &-button {
+    &::after {
+      content: url("../../assets/icons/ic-chevron.svg");
+      text-align: right;
+      float: right;
+    }
+  }
+}
+
+.accordion-content {
+  display: none;
+}

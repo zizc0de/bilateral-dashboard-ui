@@ -1,0 +1,25 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &.open > .dropdown-content {
+    display: block;
+  }
+}
+
+.dropdown-content {
+  background-color: #FFFFFF;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.3);
+  border-radius: 2px;
+  display: none;
+  min-width: 186px;
+  max-height: 500px;
+  overflow: auto;
+  padding: 16px;
+  position: absolute;
+  z-index: 1;
+
+  ul > li {
+    padding: 5px 0;
+  }
+}
