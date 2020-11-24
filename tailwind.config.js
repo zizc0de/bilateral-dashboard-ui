@@ -3,11 +3,13 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
+  important: true,
   purge: [],
   theme: {
     backgroundColor: {
       dark: "#1D1C2F",
       secondary: "#F88A28",
+      transparent: 'transparent',
       "soft-gray": "#EBECED",
       "light-gray": "#F5F8FA",
     },
