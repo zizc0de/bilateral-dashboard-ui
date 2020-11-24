@@ -37,16 +37,13 @@
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0;
-    border-right: none;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
   }
 
-  &-append {
+  &-append,
+  &-prepend {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: -1px;
 
     .input-group-text {
       display: -webkit-box;
@@ -64,9 +61,6 @@
       white-space: nowrap;
       background-color: #ffffff;
       border: 1px solid #e2e8f0;
-      border-left: none;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
       border-radius: 0.25rem;
 
       > i {
@@ -75,10 +69,44 @@
       }
     }
   }
+
+  &-prepend {
+    margin-right: -1px;
+
+    .form-input {
+      border-left: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding-left: 0;
+    }
+
+    .input-group-text {
+      border-right: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &-append {
+    margin-left: -1px;
+
+    .form-input {
+      border-right: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding-right: 0;
+    }
+
+    .input-group-text {
+      border-left: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
 }
 
 .form-checkbox {
-  color: #F88A28 !important;
+  color: #f88a28 !important;
   &:focus {
     box-shadow: none !important;
     outline: none !important;

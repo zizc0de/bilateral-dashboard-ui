@@ -101,11 +101,32 @@
             <div class="main-header">
                 <div class="main-header-title font-proxima-bold text-default">Portofolio Proyek Bilateral</div>
                 <div class="main-header-menu main-header-menu--right">
-                    <div class="main-header-menu__item">
-                        Search
+                    <div class="main-header-menu__item border-r border-l border-soft-gray h-full">
+                        <div class="form-input-group h-full">
+                            <div class="form-input-group-prepend">
+                                <div class="input-group-text border-none">
+                                    <i class="bilateral-icon search"></i>
+                                </div>
+                                <input type="text" class="form-input bg-transparent border-none" placeholder="Cari...">
+                            </div>
+                        </div>
                     </div>
                     <div class="main-header-menu__item">
-                        Profile
+                        <div class="dropdown cursor-pointer">
+                            <div class="dropdown-button has-icon">
+                                <img src="../assets/images/user.svg" class="main-header__profile-image" />
+                            </div>
+                            <div class="dropdown-content">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,8 +148,8 @@
                                 <div class="flex">
                                     <div class="flex pr-2">
                                         <div class="form-input-group">
-                                            <input type="text" class="form-input" placeholder="Cari...">
                                             <div class="form-input-group-append">
+                                                <input type="text" class="form-input" placeholder="Cari...">
                                                 <div class="input-group-text">
                                                     <i class="bilateral-icon search-gray"></i>
                                                 </div>
