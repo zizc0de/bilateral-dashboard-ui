@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "tailwind:build": "postcss styles/tailwind.scss -o dist/css/tailwind.css",
-    "styles:watch": "node-sass --watch styles/styles.scss dist/css/styles.min.css",
+    "styles:watch": "node-sass --watch styles/styles.scss dist/css/styles.min.css --output-style compressed",
     "theme:build": "npm run tailwind:build && node-sass styles/styles.scss dist/css/styles.min.css --output-style compressed"
   },
   "repository": {
