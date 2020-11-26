@@ -72,3 +72,7 @@
     }
   }
 }
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+  border-bottom: none !important;
+}
