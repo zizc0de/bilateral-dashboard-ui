@@ -6,14 +6,31 @@
   text-transform: uppercase;
 }
 
+.form-text {
+  color: #333333;
+  font-family: "Proxima-SemiBold";
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.form-group {
+  margin-bottom: 2em;
+}
+
 .form-input,
 .form-select {
   font-size: 12px !important;
+  width: 100%;
 
   &:focus {
     box-shadow: none !important;
     outline: none !important;
-    border-color: #e2e8f0 !important;
+    border-color: #f88a28 !important;
+  }
+
+  &-md {
+    font-size: 14px !important;
+    height: 38px;
   }
 }
 
@@ -107,6 +124,7 @@
 
 .form-checkbox {
   color: #f88a28 !important;
+
   &:focus {
     box-shadow: none !important;
     outline: none !important;
@@ -118,5 +136,15 @@
   > span {
     font-size: 12px;
     margin-left: 10px;
+  }
+}
+
+.form-radio {
+  color: #f88a28 !important;
+
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #f88a28 !important;
   }
 }

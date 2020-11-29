@@ -1,0 +1,53 @@
+.wizard-step {
+  position: relative;
+
+  li {
+    font-size: 14px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      height: 13px;
+      width: 13px;
+      background-color: #D8D8D8;
+      border-radius: 100%;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 25px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        bottom: 0;
+        left: 5.5px;
+        width: 1px;
+        background-color: #DDDDDD;
+      }
+    }
+
+    &.active {
+      &::before {
+        background-color: #F88A28;
+      }
+    }
+
+    &.active {
+      &::after {
+        content: "";
+        background-color: #F88A28;
+      }
+    }
+  }
+
+  &__item {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-left: 30px;
+  }
+}
