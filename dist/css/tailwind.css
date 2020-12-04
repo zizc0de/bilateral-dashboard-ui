@@ -171,6 +171,10 @@ button:-moz-focusring,
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
+progress {
+  vertical-align: baseline;
+}
+
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
@@ -655,20 +659,12 @@ img {
   border-color: rgba(235, 236, 237, var(--border-opacity)) !important;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem !important;
-}
-
 .border-solid {
   border-style: solid !important;
 }
 
 .border-none {
   border-style: none !important;
-}
-
-.border {
-  border-width: 1px !important;
 }
 
 .border-t {
@@ -693,10 +689,6 @@ img {
 
 .flex {
   display: flex !important;
-}
-
-.inline-flex {
-  display: inline-flex !important;
 }
 
 .table {
@@ -747,6 +739,10 @@ img {
   font-size: 0.875rem !important;
 }
 
+.text-base {
+  font-size: 1rem !important;
+}
+
 .text-lg {
   font-size: 1.125rem !important;
 }
@@ -755,9 +751,9 @@ img {
   font-size: 3rem !important;
 }
 
-.my-2 {
-  margin-top: 0.5rem !important;
-  margin-bottom: 0.5rem !important;
+.my-3 {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
 }
 
 .my-4 {
@@ -793,16 +789,12 @@ img {
   margin-bottom: 0.25rem !important;
 }
 
-.mt-2 {
-  margin-top: 0.5rem !important;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem !important;
 }
 
-.ml-2 {
-  margin-left: 0.5rem !important;
+.mt-3 {
+  margin-top: 0.75rem !important;
 }
 
 .mb-3 {

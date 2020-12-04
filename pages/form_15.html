@@ -147,52 +147,52 @@
                                             Dokumen Perencanaan Teknis
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Lingkungan Proyek
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Kandungan Impor, Kandungan Lokal dan Penyerapan Kerja
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Perkiraan Kebutuhan Biaya dan Rencana Pembiayaan
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Potensi Pemberi Pinjaman
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Lokasi, Rencana Pengadaan Lahan dan Permukiman
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Analisis Mengenai Dampak Lingkungan
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Keterkaitan dengan Proyek Lain
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Rencana Pengaturan Pengadaan Barang/Jasa
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Rencana Pelaksanaan Proyek
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Kebelanjutan Proyek
                                         </div>
@@ -202,55 +202,57 @@
                         </div>
                         <div class="col-span-2 card">
                             <div class="card-header card-header--has-divider bg-light-gray">
-                                <div class="card-header__title">Dokumen Perencanaan Teknis</div>
+                                <div class="card-header__title">Kebelanjutan Proyek</div>
                             </div>
                             <div class="card-body">
                                 <div class="form-group">
-                                    <p class="form-text">Studi Kelayakan / Feasibility Study*</p>
-                                    <div class="form-group-radio">
-                                        <div>
-                                            <input type="radio" name="study" class="form-radio" checked>
-                                            <span class="form-radio__label">Ada</span>
-                                        </div>
-                                        <div>
-                                            <input type="radio" name="study" class="form-radio">
-                                            <span class="form-radio__label">Belum Ada</span>
-                                        </div>
-                                    </div>
-                                    <p class="text-xs text-gray italic my-3">
-                                        Jika ada penjelasan diisi dengan kapan penerbitan, siapa yang melakukan. Jika
-                                        belum ada, diisi dengan rencana penyusunan FS
-                                    </p>
-                                    <input type="text" class="form-input form-input-md" placeholder="Penjelasan">
+                                    <p class="form-text">Rencana Pelaksanaan Operasi dan Pemeliharaan *</p>
+                                    <input type="text" class="form-input form-input-md"
+                                        placeholder="Masukkan rencana pelaksanaan">
+                                    <p class="form-note">diisi dengan rencana pelaksanaan OP</p>
                                 </div>
                                 <div class="form-group">
-                                    <p class="form-text">Engineering Design (BED/DED/ES)*</p>
-                                    <div class="form-group-radio">
-                                        <div>
-                                            <input type="radio" name="engineering" class="form-radio" checked>
-                                            <span class="form-radio__label">Ada</span>
-                                        </div>
-                                        <div>
-                                            <input type="radio" name="engineering" class="form-radio">
-                                            <span class="form-radio__label">Belum Ada</span>
-                                        </div>
-                                    </div>
-                                    <input type="text" class="form-input form-input-md mt-3" placeholder="Penjelasan">
+                                    <p class="form-text">Rencana Pembiayaan Operasi dan Pemeliharaan : *</p>
+                                    <input type="text" class="form-input form-input-md"
+                                        placeholder="Masukkan rencana pembiayaan">
+                                    <p class="form-note">diisi dengan rencana pelaksanaan OP</p>
                                 </div>
-                                <div class="grid grid-cols-2 gap-5">
-                                    <div class="form-group">
-                                        <p class="form-text">Langkah Tindak Lanjut</p>
-                                        <input type="text" class="form-input form-input-md"
-                                            placeholder="Masukkan langkah tindak lanjut">
+                                <div class="form-group">
+                                    <p class="form-text">Rencana Serah Terima Aset : *</p>
+                                    <input type="text" class="form-input form-input-md"
+                                        placeholder="Masukkan rencana serah terima aset">
+                                </div>
+                                <div class="border-t border-solid border-soft-gray -mx-4 px-4">
+                                    <div class="my-5">
+                                        <p class="text-base font-proxima-bold">Jakarta, 2020</p>
+                                        <p class="text-base font-proxima-bold">Unit Kerja Eselon II Pelaksana</p>
                                     </div>
                                     <div class="form-group">
-                                        <p class="form-text">Jadwal Penyelesaian Tindak Lanjut</p>
+                                        <p class="form-text">Nama</p>
+                                        <input type="text" class="form-input form-input-md" placeholder="Masukkan nama">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-5">
+                                        <div class="form-group">
+                                            <p class="form-text">NIP</p>
+                                            <input type="text" class="form-input form-input-md"
+                                                placeholder="Masukkan NIP">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form-text">Direktur Pendanaan Luar Negeri Bilateral BAPPENAS</p>
                                         <input type="text" class="form-input form-input-md"
-                                            placeholder="Masukkan jadwal">
+                                            placeholder="Masukkan direktur pendanaan luar negeri bilateral bappenas">
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-5">
+                                        <div class="form-group">
+                                            <p class="form-text">NIP</p>
+                                            <input type="text" class="form-input form-input-md"
+                                                placeholder="Masukkan NIP">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer">
+                            <div class="card-footer sticky">
                                 <div class="flex justify-between">
                                     <div>
                                         <button type="button"
@@ -260,15 +262,15 @@
                                     </div>
                                     <div class="flex">
                                         <div class="mr-5">
-                                            <a href="./form_4.html"
+                                            <a href="./form_14.html"
                                                 class="btn btn-md btn-default text-secondary font-proxima-bold">
                                                 Sebelumnya
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="./form_6.html" class="btn btn-md btn-secondary font-proxima-bold">
-                                                Berikutnya
-                                            </a>
+                                            <button type="button" class="btn btn-md btn-secondary font-proxima-bold">
+                                                Selesai
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

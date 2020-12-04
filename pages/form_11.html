@@ -147,32 +147,32 @@
                                             Dokumen Perencanaan Teknis
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Lingkungan Proyek
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Kandungan Impor, Kandungan Lokal dan Penyerapan Kerja
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Perkiraan Kebutuhan Biaya dan Rencana Pembiayaan
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Potensi Pemberi Pinjaman
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Lokasi, Rencana Pengadaan Lahan dan Permukiman
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Analisis Mengenai Dampak Lingkungan
                                         </div>
@@ -202,52 +202,53 @@
                         </div>
                         <div class="col-span-2 card">
                             <div class="card-header card-header--has-divider bg-light-gray">
-                                <div class="card-header__title">Dokumen Perencanaan Teknis</div>
+                                <div class="card-header__title">Analisis Mengenai Dampak Lingkungan </div>
                             </div>
                             <div class="card-body">
-                                <div class="form-group">
-                                    <p class="form-text">Studi Kelayakan / Feasibility Study*</p>
-                                    <div class="form-group-radio">
-                                        <div>
-                                            <input type="radio" name="study" class="form-radio" checked>
-                                            <span class="form-radio__label">Ada</span>
-                                        </div>
-                                        <div>
-                                            <input type="radio" name="study" class="form-radio">
-                                            <span class="form-radio__label">Belum Ada</span>
-                                        </div>
+                                <div class="grid grid-cols-2 gap-5">
+                                    <div class="form-group">
+                                        <p class="form-text">Kajian Dampak Lingkungan yang Diperlukan : *</p>
+                                        <select name="status_kepemilikan" class="form-select form-select-md">
+                                            <option value="">Pilih</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                        </select>
                                     </div>
-                                    <p class="text-xs text-gray italic my-3">
-                                        Jika ada penjelasan diisi dengan kapan penerbitan, siapa yang melakukan. Jika
-                                        belum ada, diisi dengan rencana penyusunan FS
-                                    </p>
-                                    <input type="text" class="form-input form-input-md" placeholder="Penjelasan">
-                                </div>
-                                <div class="form-group">
-                                    <p class="form-text">Engineering Design (BED/DED/ES)*</p>
-                                    <div class="form-group-radio">
-                                        <div>
-                                            <input type="radio" name="engineering" class="form-radio" checked>
-                                            <span class="form-radio__label">Ada</span>
-                                        </div>
-                                        <div>
-                                            <input type="radio" name="engineering" class="form-radio">
-                                            <span class="form-radio__label">Belum Ada</span>
-                                        </div>
+                                    <div class="form-group">
+                                        <p class="form-text">Status/ Progress Kajian yang dilakukan : *</p>
+                                        <select name="tatacara" class="form-select form-select-md">
+                                            <option value="">Pilih</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                        </select>
                                     </div>
-                                    <input type="text" class="form-input form-input-md mt-3" placeholder="Penjelasan">
                                 </div>
                                 <div class="grid grid-cols-2 gap-5">
                                     <div class="form-group">
-                                        <p class="form-text">Langkah Tindak Lanjut</p>
-                                        <input type="text" class="form-input form-input-md"
-                                            placeholder="Masukkan langkah tindak lanjut">
+                                        <p class="form-text">Isu : *</p>
+                                        <input type="text" class="form-input form-input-md" placeholder="Masukkan isu">
                                     </div>
                                     <div class="form-group">
-                                        <p class="form-text">Jadwal Penyelesaian Tindak Lanjut</p>
+                                        <p class="form-text">Langkah Penyelesaian yang telah diambil : *</p>
                                         <input type="text" class="form-input form-input-md"
-                                            placeholder="Masukkan jadwal">
+                                            placeholder="Masukkan langkah penyelesaian">
                                     </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-5">
+                                    <div class="form-group">
+                                        <p class="form-text">KLI terkait untuk penyelesaian isu : *</p>
+                                        <input type="text" class="form-input form-input-md" placeholder="Masukkan KLI">
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form-text">Rekomendasi Tindak Lanjut : *</p>
+                                        <input type="text" class="form-input form-input-md"
+                                            placeholder="Masukkan rekomendasi">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <p class="form-text">Jadwal Penyelesaian Tindak Lanjut : *</p>
+                                    <input type="text" class="form-input form-input-md"
+                                        placeholder="Masukkan jadwal penyelesaian tindak lanjut">
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -260,13 +261,13 @@
                                     </div>
                                     <div class="flex">
                                         <div class="mr-5">
-                                            <a href="./form_4.html"
+                                            <a href="./form_10.html"
                                                 class="btn btn-md btn-default text-secondary font-proxima-bold">
                                                 Sebelumnya
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="./form_6.html" class="btn btn-md btn-secondary font-proxima-bold">
+                                            <a href="./form_12.html" class="btn btn-md btn-secondary font-proxima-bold">
                                                 Berikutnya
                                             </a>
                                         </div>

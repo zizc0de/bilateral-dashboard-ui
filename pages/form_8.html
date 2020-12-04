@@ -147,17 +147,17 @@
                                             Dokumen Perencanaan Teknis
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Lingkungan Proyek
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Kandungan Impor, Kandungan Lokal dan Penyerapan Kerja
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <div class="wizard-step__item">
                                             Perkiraan Kebutuhan Biaya dan Rencana Pembiayaan
                                         </div>
@@ -202,40 +202,60 @@
                         </div>
                         <div class="col-span-2 card">
                             <div class="card-header card-header--has-divider bg-light-gray">
-                                <div class="card-header__title">Dokumen Perencanaan Teknis</div>
+                                <div class="card-header__title">Perkiraan Kebutuhan Biaya dan Rencana Pembiayaan</div>
                             </div>
                             <div class="card-body">
-                                <div class="form-group">
-                                    <p class="form-text">Studi Kelayakan / Feasibility Study*</p>
-                                    <div class="form-group-radio">
-                                        <div>
-                                            <input type="radio" name="study" class="form-radio" checked>
-                                            <span class="form-radio__label">Ada</span>
-                                        </div>
-                                        <div>
-                                            <input type="radio" name="study" class="form-radio">
-                                            <span class="form-radio__label">Belum Ada</span>
+                                <div class="grid grid-cols-2 gap-5">
+                                    <div class="form-group">
+                                        <p class="form-text">NIlai Pinjaman (USD)</p>
+                                        <input type="text" class="form-input form-input-md"
+                                            placeholder="Masukkan nilai pinjaman">
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form-text">Kebutuhan Dana Pendamping</p>
+                                        <div class="form-group-radio">
+                                            <div>
+                                                <input type="radio" name="kebutuhan" class="form-radio" checked>
+                                                <span class="form-radio__label">Ada</span>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="kebutuhan" class="form-radio">
+                                                <span class="form-radio__label">Belum Ada</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <p class="text-xs text-gray italic my-3">
-                                        Jika ada penjelasan diisi dengan kapan penerbitan, siapa yang melakukan. Jika
-                                        belum ada, diisi dengan rencana penyusunan FS
-                                    </p>
-                                    <input type="text" class="form-input form-input-md" placeholder="Penjelasan">
                                 </div>
-                                <div class="form-group">
-                                    <p class="form-text">Engineering Design (BED/DED/ES)*</p>
-                                    <div class="form-group-radio">
-                                        <div>
-                                            <input type="radio" name="engineering" class="form-radio" checked>
-                                            <span class="form-radio__label">Ada</span>
-                                        </div>
-                                        <div>
-                                            <input type="radio" name="engineering" class="form-radio">
-                                            <span class="form-radio__label">Belum Ada</span>
+                                <div class="grid grid-cols-2 gap-5">
+                                    <div class="form-group">
+                                        <p class="form-text">Jumlah Dana Pendamping</p>
+                                        <input type="text" class="form-input form-input-md"
+                                            placeholder="Masukkan dana pendamping">
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form-text">Sumber Pembiayaan Lainnya</p>
+                                        <div class="form-group-radio">
+                                            <div>
+                                                <input type="radio" name="dana" class="form-radio" checked>
+                                                <span class="form-radio__label">Ada</span>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="dana" class="form-radio">
+                                                <span class="form-radio__label">Belum Ada</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <input type="text" class="form-input form-input-md mt-3" placeholder="Penjelasan">
+                                </div>
+                                <div class="grid grid-cols-2 gap-5">
+                                    <div class="form-group">
+                                        <p class="form-text">Bentuk / Skema Pembiayaan</p>
+                                        <input type="text" class="form-input form-input-md"
+                                            placeholder="Masukkan bentuk / skema pembiayaan">
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form-text">Rencana Penyerapan Tahunan</p>
+                                        <input type="text" class="form-input form-input-md"
+                                            placeholder="Masukkan rencana penyerapan tahunan">
+                                    </div>
                                 </div>
                                 <div class="grid grid-cols-2 gap-5">
                                     <div class="form-group">
@@ -246,7 +266,7 @@
                                     <div class="form-group">
                                         <p class="form-text">Jadwal Penyelesaian Tindak Lanjut</p>
                                         <input type="text" class="form-input form-input-md"
-                                            placeholder="Masukkan jadwal">
+                                            placeholder="Masukkan jadwal penyelesaian">
                                     </div>
                                 </div>
                             </div>
@@ -260,13 +280,13 @@
                                     </div>
                                     <div class="flex">
                                         <div class="mr-5">
-                                            <a href="./form_4.html"
+                                            <a href="./form_7.html"
                                                 class="btn btn-md btn-default text-secondary font-proxima-bold">
                                                 Sebelumnya
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="./form_6.html" class="btn btn-md btn-secondary font-proxima-bold">
+                                            <a href="./form_9.html" class="btn btn-md btn-secondary font-proxima-bold">
                                                 Berikutnya
                                             </a>
                                         </div>
