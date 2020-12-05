@@ -872,9 +872,8 @@ img {
   padding-right: 0.75rem !important;
 }
 
-.sticky {
-  position: -webkit-sticky !important;
-  position: sticky !important;
+.text-left {
+  text-align: left !important;
 }
 
 .text-center {
