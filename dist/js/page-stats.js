@@ -1,6 +1,21 @@
 (function () {
   var chartProjectCount = document.getElementById("table-stats").getContext("2d");
 
+  var options = {
+    legend: {
+      display: false,
+    },
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
+  };
+
   new Chart(chartProjectCount, {
     type: "bar",
     data: {
@@ -33,16 +48,6 @@
         },
       ],
     },
-    options: {
-      scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
-          },
-        ],
-      },
-    },
+    options,
   });
 })();
