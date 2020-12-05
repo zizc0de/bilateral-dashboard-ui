@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="../dist/css/styles.min.css">
     <link rel="stylesheet" href="../dist/css/tailwind.css">
 
+    <!-- Load jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <title>BILATERAL</title>
 </head>
 
@@ -98,7 +101,7 @@
                 <div class="main-header-title font-proxima-bold text-default">Portofolio Proyek Bilateral</div>
                 <div class="main-header-menu main-header-menu--right">
                     <div class="main-header-menu__item border-r border-l border-soft-gray h-full">
-                        <div class="form-input-group h-full">
+                        <div class="form-search form-input-group h-full">
                             <div class="form-input-group-prepend">
                                 <div class="input-group-text border-none">
                                     <i class="bilateral-icon search"></i>
@@ -253,49 +256,57 @@
                                                 <ul>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="0" checked>
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="0" checked>
                                                             <span>Kode</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="1" checked>
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="1" checked>
                                                             <span>Nama Proyek</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="2" checked>
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="2" checked>
                                                             <span>Status</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="3" checked>
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="3" checked>
                                                             <span>Bidang</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="4" checked>
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="4" checked>
                                                             <span>KL</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="5" checked>
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="5" checked>
                                                             <span>Program</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="6" checked>
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="6" checked>
                                                             <span>Lokasi</span>
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="form-group-checkbox">
-                                                            <input type="checkbox" class="form-checkbox data-toggle" data-column="7">
+                                                            <input type="checkbox" class="form-checkbox data-toggle"
+                                                                data-column="7">
                                                             <span>Tanggal A</span>
                                                         </div>
                                                     </li>
@@ -314,9 +325,10 @@
                                         </button>
                                     </div>
                                     <div>
-                                        <a href="./form.html" class="btn btn-secondary font-proxima-bold">
+                                        <button type="button" class="btn btn-secondary font-proxima-bold btn-modal"
+                                            data-target="formModal">
                                             Tambah Proyek
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -727,10 +739,169 @@
             <!-- End Content Page -->
         </div>
         <!-- End Main Content -->
-    </div>
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- Start Modal -->
+        <div id="formModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-close"></div>
+                <div class="modal-head">
+                    <div class="modal-head__title">Tambah Proyek</div>
+                </div>
+                <div class="modal-body">
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="form-group">
+                            <p class="form-text">Kode</p>
+                            <input type="text" class="form-input form-input-md" placeholder="Masukkan kode">
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Bidang</p>
+                            <select name="bidang" class="form-select form-select-md">
+                                <option value="">Pilih Bidang</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="form-group">
+                            <p class="form-text">Program</p>
+                            <input type="text" class="form-input form-input-md" placeholder="Masukkan program">
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Cluster</p>
+                            <select name="cluster" class="form-select form-select-md">
+                                <option value="">Pilih Cluster</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p class="form-text">Nama Proyek</p>
+                        <input type="text" class="form-input form-input-md" placeholder="Masukkan nama proyek">
+                    </div>
+                    <div class="form-group">
+                        <p class="form-text">Nama Proyek BB</p>
+                        <input type="text" class="form-input form-input-md" placeholder="Masukkan nama proyek">
+                    </div>
+                    <div class="form-group">
+                        <p class="form-text">Tahun BB</p>
+                        <div class="grid grid-cols-2 gap-5">
+                            <select name="tahun_mulai" class="form-select form-select-md">
+                                <option value="">Tahun Mulai</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                            </select>
+                            <select name="tahun_akhir" class="form-select form-select-md">
+                                <option value="">Tahun Akhir</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="form-group">
+                            <p class="form-text">Nilai Pinjaman</p>
+                            <div class="form-input-group-prepend">
+                                <div class="input-group-button">$</div>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nilai pinjaman">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Nilai Pendamping</p>
+                            <div class="form-input-group-prepend">
+                                <div class="input-group-button">Rp</div>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nilai pendamping">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-solid border-soft-gray -mx-4 px-4">
+                        <p class="text-sm font-proxima-bold my-5">Lokasi</p>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Jangkauan</p>
+                                <select name="jangkauan" class="form-select form-select-md">
+                                    <option value="">Pilih Jangkauan</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Nama Lokasi</p>
+                                <input type="text" class="form-input form-input-md" placeholder="Masukkan nama lokasi">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Provinsi</p>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nama provinsi">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Kota</p>
+                                <input type="text" class="form-input form-input-md" placeholder="Masukkan nama kota">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-solid border-soft-gray -mx-4 px-4 pt-5">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Lender</p>
+                                <select name="lender" class="form-select form-select-md">
+                                    <option value="">Pilih Lender</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Status</p>
+                                <select name="status" class="form-select form-select-md">
+                                    <option value="">Pilih Status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Ruang Lingkup</p>
+                            <input type="text" class="form-input form-input-md" placeholder="Masukkan ruang lingkup">
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Nomor Registrasi</p>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nomor registrasi">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Nilai Pinjaman Valas</p>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nilai pinjaman valas">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Mata Uang</p>
+                                <input type="text" class="form-input form-input-md" placeholder="Masukkan mata uang">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="flex justify-end">
+                        <div>
+                            <button type="button" class="btn btn-secondary font-proxima-bold">
+                                Simpan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+    </div>
 
     <!--Datatables -->
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>

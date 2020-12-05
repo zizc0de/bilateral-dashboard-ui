@@ -14,7 +14,7 @@ $(document).ready(function () {
     $("#btn-filter > i").toggleClass("fa-chevron-up", "fa-chevron-down");
   });
 
-  $(".data-toggle").on("click", function (e) {    
+  $(".data-toggle").on("click", function (e) {
     // Get the column API object
     let column = table.column($(this).attr("data-column"));
 

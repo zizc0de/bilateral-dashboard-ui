@@ -653,6 +653,12 @@ img {
   background-color: rgba(245, 248, 250, var(--bg-opacity)) !important;
 }
 
+.hover\:bg-secondary:hover {
+  --bg-opacity: 1 !important;
+  background-color: #F88A28 !important;
+  background-color: rgba(248, 138, 40, var(--bg-opacity)) !important;
+}
+
 .border-soft-gray {
   --border-opacity: 1 !important;
   border-color: #EBECED !important;
@@ -709,6 +715,10 @@ img {
 
 .items-center {
   align-items: center !important;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
 }
 
 .justify-between {
@@ -776,11 +786,6 @@ img {
   margin-right: -1.25rem !important;
 }
 
-.-my-40 {
-  margin-top: -10rem !important;
-  margin-bottom: -10rem !important;
-}
-
 .mt-1 {
   margin-top: 0.25rem !important;
 }
@@ -815,6 +820,10 @@ img {
 
 .mb-8 {
   margin-bottom: 2rem !important;
+}
+
+.-mt-40 {
+  margin-top: -10rem !important;
 }
 
 .opacity-75 {
@@ -870,6 +879,10 @@ img {
 
 .pr-3 {
   padding-right: 0.75rem !important;
+}
+
+.pt-5 {
+  padding-top: 1.25rem !important;
 }
 
 .text-left {

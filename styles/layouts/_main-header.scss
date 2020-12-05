@@ -10,6 +10,10 @@
   max-width: 80%;
   margin: 0 0 0 auto;
   z-index: 99;
+
+  .form-search input {
+    width: 200px;
+  }
 }
 
 .main-header .main-header-menu {
