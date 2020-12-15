@@ -647,6 +647,12 @@ img {
   background-color: transparent !important;
 }
 
+.bg-gray {
+  --bg-opacity: 1 !important;
+  background-color: #ECF1F3 !important;
+  background-color: rgba(236, 241, 243, var(--bg-opacity)) !important;
+}
+
 .bg-light-gray {
   --bg-opacity: 1 !important;
   background-color: #F5F8FA !important;
@@ -814,6 +820,10 @@ img {
   margin-right: 1.25rem !important;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem !important;
+}
+
 .mt-8 {
   margin-top: 2rem !important;
 }
@@ -859,6 +869,11 @@ img {
   padding-bottom: 0.75rem !important;
 }
 
+.px-3 {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
 .px-4 {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
@@ -867,10 +882,6 @@ img {
 .px-5 {
   padding-left: 1.25rem !important;
   padding-right: 1.25rem !important;
-}
-
-.pr-2 {
-  padding-right: 0.5rem !important;
 }
 
 .pb-2 {

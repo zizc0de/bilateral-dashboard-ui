@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Regular Datatables CSS-->
+    <link href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!--Responsive Extension Datatables CSS-->
+    <link href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../vendor/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="../dist/css/styles.min.css">
+    <link rel="stylesheet" href="../dist/css/tailwind.css">
+
+    <!-- Load jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <title>BILATERAL</title>
+</head>
+
+<body>
+    <div class="main-layout">
+        <!-- Start Main Sidebar -->
+        <div class="main-sidebar bg-dark">
+            <div class="main-sidebar-head">
+                <div class="main-sidebar__icon"></div>
+                <div class="main-sidebar__title font-proxima-bold text-lg text-white uppercase">
+                    Bilateral
+                </div>
+            </div>
+            <div class="main-sidebar-menu">
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Dashboard</p>
+                    <ul>
+                        <li class="active">
+                            <a href="table-makro.html">
+                                <i class="bilateral-icon office"></i>
+                                <span>Data Makro APBN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bilateral-icon graph"></i>
+                                <span>Data Outstanding Utang</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="bilateral-icon handshake"></i>
+                                <span>Portofolio Proyek Bilateral</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bilateral-icon segrakan"></i>
+                                <span>Segrakan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-sidebar-menu__item">
+                    <p class="main-sidebar-menu__title">Master Data</p>
+                    <ul>
+                        <li>
+                            <a href="#">Program</a>
+                        </li>
+                        <li>
+                            <a href="#">Bidang</a>
+                        </li>
+                        <li>
+                            <a href="#">Kementrian / Lembaga</a>
+                        </li>
+                        <li>
+                            <a href="#">Cluster</a>
+                        </li>
+                        <li>
+                            <a href="#">Lender</a>
+                        </li>
+                        <li>
+                            <a href="#">Status Proyek</a>
+                        </li>
+                        <li>
+                            <a href="#">Lokasi</a>
+                        </li>
+                        <li>
+                            <a href="#">Kurs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Sidebar -->
+        <!-- Start Main Content -->
+        <div class="main-content">
+            <!-- Start Navbar -->
+            <div class="main-header">
+                <div class="main-header-title font-proxima-bold text-default">Portofolio Proyek Bilateral</div>
+                <div class="main-header-menu main-header-menu--right">
+                    <div class="main-header-menu__item border-r border-l border-soft-gray h-full">
+                        <div class="form-search form-input-group h-full">
+                            <div class="form-input-group-prepend">
+                                <div class="input-group-text border-none">
+                                    <i class="bilateral-icon search"></i>
+                                </div>
+                                <input type="text" class="form-input bg-transparent border-none" placeholder="Cari...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-header-menu__item">
+                        <div class="dropdown cursor-pointer">
+                            <div class="dropdown-button has-icon">
+                                <img src="../assets/images/user.svg" class="main-header__profile-image" />
+                            </div>
+                            <div class="dropdown-content">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Navbar -->
+            <!-- Start Content Page -->
+            <div class="main-body">
+                <section class="section--with-padding">
+                    <div class="card">
+                        <div class="card-header bg-light-gray pb-2">
+                            <div class="card-header__title">Detail Data</div>
+                            <div class="flex my-4">
+                                <div class="flex-1">
+                                    <div class="tab-rounded">
+                                        <a href="table-makro.html" class="tab-rounded__item active">Tabel</a>
+                                        <a href="table-makro-stats.html" class="tab-rounded__item">Grafik</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="flex">
+                                        <div class="form-input-group">
+                                            <div class="form-input-group-append">
+                                                <input type="text" class="form-input" placeholder="Cari...">
+                                                <div class="input-group-text">
+                                                    <i class="bilateral-icon search-gray"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex px-3">
+                                        <div class="dropdown">
+                                            <button type="button"
+                                                class="btn btn-default p-2 text-soft-gray">
+                                                <i class="bilateral-icon eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <button type="button" class="btn btn-default p-2 text-soft-gray">
+                                            <i class="bilateral-icon export"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body bg-light-gray">
+                            <table id="dataTable" class="table-default">
+                                <thead class="thead-border">
+                                    <tr>
+                                        <th rowspan="6">Tahun Anggaran</th>
+                                        <th rowspan="6">Penerimaan Domestik Bruto (PDB)</th>
+                                        <th rowspan="6">Penerimaan</th>
+                                        <th rowspan="6">Belanja</th>
+                                        <th rowspan="6">Keseimbangan Primer</th>
+                                        <th rowspan="6">Jumlah Defisit</th>
+                                        <th rowspan="6">% Defisit Terhadap PDB</th>
+                                        <th rowspan="6">Pembiayaan Anggaran</th>
+                                        <th colspan="15" class="bg-gray">Pembiayaan Utang</th>
+                                        <th rowspan="6">Pembiayaan Investasi</th>
+                                        <th colspan="3">Pemberian Pinjaman kepada BUMN/Pemda/Lembaga/Badan Lainnya</th>
+                                        <th rowspan="6">Kewajiban Penjaminan</th>
+                                        <th rowspan="6">Pembiayaan Lainnya</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="6" class="bg-gray">SBN</th>
+                                        <th colspan="3" class="bg-gray">Pinjaman Dalam Negeri</th>
+                                        <th colspan="10" class="bg-gray">Pinjaman Luar Negeri</th>
+                                        <th rowspan="6" class="bg-gray">Total</th>
+                                        <th rowspan="6">Pemberian Pinjaman</th>
+                                        <th rowspan="6">Penerimaan cicilan pengembalian pinjaman</th>
+                                        <th rowspan="6">Jumlah</th>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" class="bg-gray">Penarikan</th>
+                                        <th rowspan="3" class="bg-gray">Amortisasi</th>
+                                        <th rowspan="3" class="bg-gray">Jumlah</th>
+                                        <th colspan="6" class="bg-gray">Penarikan</th>
+                                        <th rowspan="3" class="bg-gray">Jumlah Penarikan Pinjaman Luar Negeri</th>
+                                        <th rowspan="3" class="bg-gray">Amortisasi</th>
+                                        <th rowspan="3" class="bg-gray">Pinjaman Luar Negeri Bersih</th>
+                                        <th rowspan="3" class="bg-gray">% (PA)</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" class="bg-gray">Pinjaman Tunai</th>
+                                        <th colspan="4" class="bg-gray">Pinjaman Kegiatan</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="bg-gray">Jumlah</th>
+                                        <th class="bg-gray">% (PLN)</th>
+                                        <th class="bg-gray">Pemerintah Pusat</th>
+                                        <th class="bg-gray">BUMN/Pemda</th>
+                                        <th class="bg-gray">Jumlah</th>
+                                        <th class="bg-gray">% (PLN)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                        <td>VALUE</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- End Content Page -->
+        </div>
+        <!-- End Main Content -->
+
+        <!-- Start Modal -->
+        <div id="formModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-close"></div>
+                <div class="modal-head">
+                    <div class="modal-head__title">Tambah Proyek</div>
+                </div>
+                <div class="modal-body">
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="form-group">
+                            <p class="form-text">Kode</p>
+                            <input type="text" class="form-input form-input-md" placeholder="Masukkan kode">
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Bidang</p>
+                            <select name="bidang" class="form-select form-select-md">
+                                <option value="">Pilih Bidang</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="form-group">
+                            <p class="form-text">Program</p>
+                            <input type="text" class="form-input form-input-md" placeholder="Masukkan program">
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Cluster</p>
+                            <select name="cluster" class="form-select form-select-md">
+                                <option value="">Pilih Cluster</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <p class="form-text">Nama Proyek</p>
+                        <input type="text" class="form-input form-input-md" placeholder="Masukkan nama proyek">
+                    </div>
+                    <div class="form-group">
+                        <p class="form-text">Nama Proyek BB</p>
+                        <input type="text" class="form-input form-input-md" placeholder="Masukkan nama proyek">
+                    </div>
+                    <div class="form-group">
+                        <p class="form-text">Tahun BB</p>
+                        <div class="grid grid-cols-2 gap-5">
+                            <select name="tahun_mulai" class="form-select form-select-md">
+                                <option value="">Tahun Mulai</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                            </select>
+                            <select name="tahun_akhir" class="form-select form-select-md">
+                                <option value="">Tahun Akhir</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="form-group">
+                            <p class="form-text">Nilai Pinjaman</p>
+                            <div class="form-input-group-prepend">
+                                <div class="input-group-button">$</div>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nilai pinjaman">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Nilai Pendamping</p>
+                            <div class="form-input-group-prepend">
+                                <div class="input-group-button">Rp</div>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nilai pendamping">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-solid border-soft-gray -mx-4 px-4">
+                        <p class="text-sm font-proxima-bold my-5">Lokasi</p>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Jangkauan</p>
+                                <select name="jangkauan" class="form-select form-select-md">
+                                    <option value="">Pilih Jangkauan</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Nama Lokasi</p>
+                                <input type="text" class="form-input form-input-md" placeholder="Masukkan nama lokasi">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Provinsi</p>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nama provinsi">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Kota</p>
+                                <input type="text" class="form-input form-input-md" placeholder="Masukkan nama kota">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-solid border-soft-gray -mx-4 px-4 pt-5">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Lender</p>
+                                <select name="lender" class="form-select form-select-md">
+                                    <option value="">Pilih Lender</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Status</p>
+                                <select name="status" class="form-select form-select-md">
+                                    <option value="">Pilih Status</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-text">Ruang Lingkup</p>
+                            <input type="text" class="form-input form-input-md" placeholder="Masukkan ruang lingkup">
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Nomor Registrasi</p>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nomor registrasi">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-text">Nilai Pinjaman Valas</p>
+                                <input type="text" class="form-input form-input-md"
+                                    placeholder="Masukkan nilai pinjaman valas">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="form-group">
+                                <p class="form-text">Mata Uang</p>
+                                <input type="text" class="form-input form-input-md" placeholder="Masukkan mata uang">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="flex justify-end">
+                        <div>
+                            <button type="button" class="btn btn-secondary font-proxima-bold">
+                                Simpan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+    </div>
+
+    <!--Datatables -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+
+    <script src="../dist/js/page-table.js"></script>
+    <script src="../dist/js/components.js"></script>
+</body>
+
+</html>
