@@ -28,6 +28,13 @@ body {
   background-size: cover;
   min-height: 350px;
   padding: 60px 37px;
+  position: relative;
+
+  .inside-container {
+    position: absolute;
+    left: 37px;
+    right: 37px;
+  }
 }
 
 .container {

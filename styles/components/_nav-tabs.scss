@@ -1,11 +1,20 @@
 .nav-tabs {
   > li {
     color: #666666;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 10px 16px;
     font-size: 14px;
+    padding: 10px 16px;
+
+    &.elipsis {
+      a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+      }
+    }
+
+    &.has-divider {
+      border-bottom: 1px solid #EBECED;
+    }
 
     > a {
       display: block;
