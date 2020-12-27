@@ -6,6 +6,8 @@
   height: fit-content;
 
   &-header {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
     padding: 20px 16px;
 
     &__title {
@@ -14,6 +16,11 @@
     }
 
     &--has-divider {
+      border-bottom: 1px solid #ebeced;
+    }
+
+    &--has-border-top-bottom {
+      border-top: 1px solid #ebeced;
       border-bottom: 1px solid #ebeced;
     }
   }

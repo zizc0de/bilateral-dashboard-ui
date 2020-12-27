@@ -60,6 +60,11 @@
     font-size: 14px !important;
     height: 38px;
   }
+
+  &-lg {
+    font-size: 16px !important;
+    height: 46px;
+  }
 }
 
 .form-input,
@@ -147,12 +152,18 @@
 
     .form-input {
       border-right: none;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      padding-right: 0;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      padding-right: 0 !important;
     }
 
     .input-group-text {
+      border-left: none;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .input-group-button {
       border-left: none;
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
