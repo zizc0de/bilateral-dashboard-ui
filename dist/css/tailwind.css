@@ -923,6 +923,11 @@ img {
   padding-bottom: 14rem !important;
 }
 
+.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+}
+
 .text-left {
   text-align: left !important;
 }
