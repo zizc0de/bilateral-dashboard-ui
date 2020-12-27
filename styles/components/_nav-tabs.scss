@@ -7,6 +7,10 @@
     padding: 10px 16px;
     font-size: 14px;
 
+    > a {
+      display: block;
+    }
+
     &.active {
       background-color: #F5F8FA;
       border-left: 3px solid #F88A28;
