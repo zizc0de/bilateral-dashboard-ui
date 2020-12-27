@@ -130,8 +130,9 @@
                         </div>
                         <div class="form-input-group">
                             <div class="form-input-group-append w-full">
-                                <input type="text" value="Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II" class="form-input form-input-lg font-proxima-semi-bold"
-                                    placeholder="Cari...">
+                                <input type="text"
+                                    value="Development of Cileunyi - Sumedang - Dawuan Toll Road Phase II"
+                                    class="form-input form-input-lg font-proxima-semi-bold" placeholder="Cari...">
                                 <div class="input-group-button">
                                     <i class="bilateral-icon search"></i>
                                 </div>
@@ -145,78 +146,50 @@
                             <div class="card sticky" style="top: 90px;">
                                 <div class="card-header">
                                     <div class="card-header__title">Daftar Isi Dokumen</div>
-                                </div>
+                                </div data-target="form-detail-1">
                                 <div class="card-body p-0">
                                     <ol class="nav nav-tabs nav-tabs--inside">
-                                        <li class="nav-tabs__item active">
-                                            <a href="javascript:void(0)" data-target="form-detail-1">
-                                                Informasi umum
-                                            </a>
+                                        <li class="nav-tabs__item elipsis active" data-target="form-detail-1">
+                                            Informasi umum
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-2">
-                                                Rasional dan Tujuan Proyek
-                                            </a>
+                                        <li class="nav-tabs__item elipsis" data-target="form-detail-2">
+                                            Rasional dan Tujuan Proyek
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-3">
-                                                Manfaat Proyek dan Penerima Manfaat
-                                            </a>
+                                        <li class="nav-tabs__item elipsis" data-target="form-detail-3">
+                                            Manfaat Proyek dan Penerima Manfaat
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-4">
-                                                Dokumen Perencanaan Teknis
-                                            </a>
+                                        <li class="nav-tabs__item elipsis" data-target="form-detail-4">
+                                            Dokumen Perencanaan Teknis
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-5">
-                                                Lingkungan Proyek
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Lingkungan Proyek
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-6">
-                                                Kandungan Impor, Kandungan Lokal dan Penyerapan Kerja
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Kandungan Impor, Kandungan Lokal dan Penyerapan Kerja
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-7">
-                                                Perkiraan Kebutuhan Biaya dan Rencana Pembiayaan
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Perkiraan Kebutuhan Biaya dan Rencana Pembiayaan
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-8">
-                                                Potensi Pemberi Pinjaman
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Potensi Pemberi Pinjaman
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-9">
-                                                Lokasi, Rencana Pengadaan Lahan dan Pemukimam Kembali
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Lokasi, Rencana Pengadaan Lahan dan Pemukimam Kembali
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-10">
-                                                Analisis Mengenai Dampak Lingkungan
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Analisis Mengenai Dampak Lingkungan
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-11">
-                                                Ketertarikan dengan Proyek Lain
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Ketertarikan dengan Proyek Lain
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-12">
-                                                Rencana Pengaturan Pengadaan Barang/Jasa
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Rencana Pengaturan Pengadaan Barang/Jasa
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-13">
-                                                Rencana Pelaksanaan Proyek
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Rencana Pelaksanaan Proyek
                                         </li>
-                                        <li class="nav-tabs__item">
-                                            <a href="javascript:void(0)" data-target="form-detail-14">
-                                                Kebelanjutan Proyek
-                                            </a>
+                                        <li class="nav-tabs__item elipsis">
+                                            Kebelanjutan Proyek
                                         </li>
                                     </ol>
                                 </div>
@@ -451,18 +424,19 @@
     <script src="../../dist/js/components.js"></script>
 
     <script type="text/javascript">
-        $(".nav-tabs__item > a").on("click", function (event) {
+        $(".nav-tabs__item").on("click", function (event) {
             event.preventDefault();
 
             var elementTarget = $(this).attr("data-target");
 
-            var targetOffset = ($(`#${elementTarget}`).offset().top - 50)
-
-            $("body,html").animate({ scrollTop: targetOffset }, 800);
+            if (elementTarget) {
+                var targetOffset = ($(`#${elementTarget}`).offset().top - 50)
+                $("body,html").animate({ scrollTop: targetOffset }, 800);
+            }
 
             $(".nav-tabs__item").removeClass("active");
 
-            this.parentNode.classList.add("active");
+            this.classList.add("active");
         });
     </script>
 </body>

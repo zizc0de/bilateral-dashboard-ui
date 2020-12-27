@@ -40,3 +40,8 @@ body {
 .container {
   max-width: 100%;
 }
+
+ol {
+  list-style: decimal !important;
+  list-style-position: inside !important;
+}

@@ -1,28 +1,23 @@
 .nav-tabs {
   > li {
     color: #666666;
+    cursor: pointer;
     font-size: 14px;
     padding: 10px 16px;
 
     &.elipsis {
-      a {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;  
-      }
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &.has-divider {
-      border-bottom: 1px solid #EBECED;
-    }
-
-    > a {
-      display: block;
+      border-bottom: 1px solid #ebeced;
     }
 
     &.active {
-      background-color: #F5F8FA;
-      border-left: 3px solid #F88A28;
+      background-color: #f5f8fa;
+      border-left: 3px solid #f88a28;
       color: #333333;
       font-family: "Proxima-SemiBold";
     }
