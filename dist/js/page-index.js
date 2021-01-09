@@ -22,19 +22,24 @@
     type: "bar",
     data: {
       labels: [
-        "Belum proses",
-        "Proses penyiapan RC/FS",
-        "Sudah terdapat RC",
-        "Green Book",
+        "Blue Book",
         "Daftar Kegiatan",
+        "Green Book",
+        "RC/FS",
         "Implementasi",
         "Selesai",
       ],
       datasets: [
         {
           data: [17, 35, 25, 17, 22, 10, 10],
-          backgroundColor: "#1C3682",
-          hoverBackgroundColor: "#F88A28",
+          backgroundColor: [
+            '#1C3682',
+            '#247402',
+            '#58B431',
+            '#A1DC88',
+            '#BF5F1C',
+            '#EC4545',
+          ],
           barThickness: 20,
         },
       ],
@@ -50,11 +55,10 @@
     type: "bar",
     data: {
       labels: [
-        "Belum proses",
-        "Proses penyiapan RC/FS",
-        "Sudah terdapat RC",
-        "Green Book",
+        "Blue Book",
         "Daftar Kegiatan",
+        "Green Book",
+        "RC/FS",
         "Implementasi",
         "Selesai",
       ],
@@ -62,8 +66,14 @@
         {
           label: "Jumlah Proyek",
           data: [17, 35, 25, 17, 22, 10, 10],
-          backgroundColor: "#1C3682",
-          hoverBackgroundColor: "#F88A28",
+          backgroundColor: [
+            '#1C3682',
+            '#247402',
+            '#58B431',
+            '#A1DC88',
+            '#BF5F1C',
+            '#EC4545',
+          ],
           barThickness: 20,
         },
       ],
